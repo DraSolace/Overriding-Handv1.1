@@ -1,5 +1,0 @@
-		keyboard.add_hotkey("HK", lambda: usedname())
-
-		keyboard.wait("KS")
-		exit()
-	macro()
