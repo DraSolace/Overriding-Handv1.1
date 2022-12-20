@@ -303,7 +303,7 @@ def createExScriptTables(self, name):
     self.ui.exMacroDelete.setFont(font6)
     self.ui.exMacroDelete.setCursor(QCursor(Qt.PointingHandCursor))
     setattr(self.ui, newName, self.ui.exMacroDelete)
-    temp = os.path.abspath(f"../O-Hands/{name}.manual")
+    temp = os.path.abspath(f"../O-Hands/{name}")
     temp2 = os.path.abspath(f"../O-Hands/Compiled/{name[:-7]}.py")
     self.ui.exMacroDelete.clicked.connect( lambda: [os.remove(temp),os.remove(temp2),self.updateExistingScripts(),self.DBManager.action(f"Удалил {name[:-7]}")])
     self.ui.exMacroDelete.setStyleSheet(u"QPushButton{\n"
